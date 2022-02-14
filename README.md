@@ -52,7 +52,9 @@ Anhand der Auswertung der Unfalldaten wird die gefährlichste Strasse der Schwei
 
 ## Zusammenfassung der durch die Daten belegten Fakten in Form eines Textes
 Die Daten die ich für meinen Artikel verwendet habe zeigen: Es gab zwischen 2011 und 2020 insgesamt 178’217 Verkehrsunfälle mit Personenschäden in der Schweiz. Davon forderten 2395 – 1,3 Prozent – ein oder mehrere Todesopfer. Die Zahl der Unfälle bleibt dabei relativ stabil. Zurückgegangen sind sie im Jahr 2020, was auf Corona zurückzuführen sein dürfte. Mehr Home-Office, weniger Touristen, die durch die Schweiz fahren sind mögliche Gründe. Der Trend dürfte auch im Jahr 2021 anhalten. Etwas genauer angeschaut habe ich die Fussgängerunfälle. Davon gab es zwischen 2011 und 2020 20’580. Rund 30 Prozent (6’222) davon waren schwer oder sogar tödlich. Das dünkt mich viel, besonders, weil es einfache Massnahmen geben müsstee, die so etwas verhindern könnten. Mehr Fussgängerstreifen oder Ampeln zum Beispiel. Diesen Aspekt werde ich definitiv noch vertiefen, sobald ich herausfinde, wo die neuralgischen Stellen sind. 
-Mein Clustering von Hotspots hat ergeben, dass die Zahl der tödlichen Unfälle im Gebiet Altstetten/ZH am höchsten ist. Inwiefern das stimmt, muss ich aber noch prüfen aufgrund der bekannten Probleme. 
+Mein Clustering von Hotspots hat ergeben, dass die Zahl der tödlichen Unfälle im Gebiet Altstetten/ZH am höchsten ist (siehe Screenshot, in den im Code beliebig reingezoomt/rausgezoomt werden kann für jeden Unfallort). Inwiefern die Ergebnisse stimmen, muss ich aber noch prüfen aufgrund der bekannten Probleme. 
+<img width="981" alt="Bildschirmfoto 2022-02-14 um 21 48 43" src="https://user-images.githubusercontent.com/88631499/153944318-6841a89a-e72d-4d37-863c-28aec8e13674.png">
+
 
 
 ## Arbeitsprotokoll
@@ -64,19 +66,19 @@ Die Idee, die Strassenunfalldaten des Bundes zu analysieren, hatte ich recht sch
 Datensatz heruntergeladen, in Dokumentation eingelesen. 
 
 ### 1. November
-Erstes Gespräch mit Gerhard Schuhwerk, Bereichsleitung Anwendungen und Datenbewirtschaftung beim Astra, Ideenaustausch. 
+Erstes Gespräch mit Gerhard Schuwerk, Bereichsleitung Anwendungen und Datenbewirtschaftung beim Astra, Ideenaustausch. 
 
 ### 2. + 3. November
 Erste quantitative Auswertungen gemacht. Versucht zu eruieren, welche Parameter spannend sein können. 
 
 ### Restlicher November
-Weitere Auswertungen gemacht. Eine der Auswertungen, die ich sonst noch gemacht habe und nicht im finalen Code sind, [gibt es in dieser Datei](Some_Analysis.ipynb). Nach Evaluation meiner Auswertungen entschieden, mich einerseits auf die tödlichen Strassenunfälle generell, andererseits auf tödliche und schwere Unfälle mit Fussgängerbeteiligung zu fokussieren. Ich fand einige weitere spannende Punkte, aber die Variablen anzupassen ist am Ende das Leichteste. Wie ich die Koordinaten auf einer Karte abbilden konnte, weiss ich weiterhin nicht. 
+Weitere Auswertungen gemacht. Einige der Auswertungen, die ich sonst noch gemacht habe und nicht im finalen Code sind, [gibt es in dieser Datei](Code/Some_Analysis.ipynb). Nach Evaluation meiner Auswertungen entschieden, mich einerseits auf die tödlichen Strassenunfälle generell, andererseits auf tödliche und schwere Unfälle mit Fussgängerbeteiligung zu fokussieren. Ich fand einige weitere spannende Punkte, aber die Variablen anzupassen ist am Ende das Leichteste. Wie ich die Koordinaten auf einer Karte abbilden konnte, weiss ich weiterhin nicht. 
 
 ### Dezember
 Wegen Daily Business kaum Zeit gehabt für die Arbeit. Weil die Daten schon oft benutzt wurden, war meine Idee, die Daten auf eine innovative Art zu clustern. Habe den Monat vor allem damit zugebracht, nach GIS-Gruppen zu suchen, die mir Inputs liefern können. Zudem gemerkt, dass ich meine Koordinaten von EPSG2056 (LV95 vom Bund) nach EPSG4326 (WSG84) umrechnen muss. 
 
 ### 3. Januar 2022
-Zweites Gespräch mit Gerhard Schuwerk vom Astra. Er sagte mir, Astra hat die Koordinaten nur als LV95-Datenpunkte. Zudem erklärte er mir weitere Nuancen im Datenset, etwa den Unterschied zwischen dem Accidentype at8 (Fussgängerunfall) und "AccidentInvolvingPedestrian".
+Zweites Gespräch mit Gerhard Schuwerk vom Astra. Er sagte mir, Astra hat die Koordinaten nur als LV95-Datenpunkte. Zudem erklärte er mir weitere Nuancen im Datenset, etwa den Unterschied zwischen dem Accidentype at8 (Fussgängerunfall) und «AccidentInvolvingPedestrian».
 
 ### 7. Januar
 Gespräch mit Kommilitonin Marlene Hämmerli. Sie hat mir gesagt, ihre ihren Code mit mir geteilt, in dem sie die Daten erfolgreich von CHLV95 nach WSG84 transformierte. Hat auch bei mir funktioniert. 
@@ -91,13 +93,13 @@ Amtliche Verzeichnis der Strassen mit Unfalldaten-File gemerged. Hat geklappt, a
 Mit Patrick Ibele, Coordination, Geo-Information and Services (COGIS) bei Swisstopo gesprochen. Er sagte, das Strassenverzeichnis funktioniere nicht für das, was ich will. Für eine automatisierte Zuordnung wie ich sie wollte, könne eine Desktop-GIS nützlich sein. 
 
 ### 19. Januar
-Endlich Erfolg bei Suche nach GIS-Fachpersonen. 1h Call mit Dr. Clemens Kielhauser von der FH Bern. Weitere Infos unter «Gespräche mit Briefing-Personen». 
+Endlich Erfolg bei Suche nach GIS-Fachpersonen. 1 Stunde Telefonat mit Dr. Clemens Kielhauser von der FH Bern. Weitere Infos unter «Gespräche mit Briefing-Personen». 
 
 ### 19. Januar
-Download und Ausprobieren der Open-Source-GIS-Lösung QGIS. War mir aber zu umfangreich. 
+Download und Ausprobieren der Open-Source-GIS-Lösung QGIS. Kam aber mit der Dokumentation nicht richtig klar, wusste zu wenig, was ich machen muss. Rasch aufgegeben. 
 
 ### 20. Januar
-Nachdem Strassenverzeichnis-Merging gescheitert war und ich Kielhausers Lösung nicht umsetzen konnte, versuchte ich, die Unfalldaten anders Adressen zuzuordnen. Auf Nominatim (Geocoder) gestossen. Das war aber sehr langsam und crashte irgendwann. Versuch abgebrochen. 
+Nachdem der Strassenverzeichnis-Merging gescheitert war und ich Kielhausers Lösung nicht umsetzen konnte, versuchte ich, die Unfalldaten anders Adressen zuzuordnen. Auf Nominatim (Geocoder) gestossen. Das war aber sehr langsam und crashte irgendwann. Versuch abgebrochen. 
 
 ### 21. Januar
 Gespräch mit Stefan Graf von Esri. Stellte mir eine Studentenlizenz ihrer GIS-Software bereit. Tutorials geschaut, erste Versuche unternommen. Wurde mir aber rasch klar, dass ich es nicht schaffe, bis Abgabe die Software zu lernen und einzusetzen. Drohte, ob all der Inputs mein Ziel aus den Augen zu verlieren. 
