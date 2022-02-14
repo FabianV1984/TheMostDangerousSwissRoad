@@ -45,6 +45,9 @@ Ich habe keinen Artikel abgegeben. Das hatte ich auch nicht geplant, weil die ne
 ## Zusammenfassung der durch die Daten belegten Fakten in Form eines Textes
 Die Daten die ich für meinen Artikel verwendet habe zeigen: Es gab zwischen 2011 und 2020 insgesamt 178’217 Verkehrsunfälle mit Personenschäden in der Schweiz. Davon forderten 2395 – 1,3 Prozent – ein oder mehrere Todesopfer. Die Zahl der Unfälle bleibt dabei relativ stabil. Zurückgegangen sind sie im Jahr 2020, was auf Corona zurückzuführen sein dürfte. Mehr Home-Office, weniger Touristen, die durch die Schweiz fahren sind mögliche Gründe. Der Trend dürfte auch im Jahr 2021 anhalten. Etwas genauer angeschaut habe ich die Fussgängerunfälle. Davon gab es zwischen 2011 und 2020 20’580. Rund 30 Prozent (6’222) davon waren schwer oder sogar tödlich. Das dünkt mich viel, besonders, weil es Massnahmen geben müssete, die so etwas verhindern könnten. Mehr Fussgängerstreifen oder Ampeln zum Beispiel. Diesen Aspekt werde ich definitiv noch vertiefen, sobald ich herausfinde, wo die neuralgischen Stellen sind. 
 
+# Danksagung
+Nebst den bereits genannten Personen danke ich auch Alexandra Stark für spannende Diskussionen, Lea Senn, «Plotty» und Mark Walther 
+
 
 ## Arbeitsprotokoll
 
