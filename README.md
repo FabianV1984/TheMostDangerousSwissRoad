@@ -66,7 +66,7 @@ Erstes Gespräch mit Gerhard Schuhwerk, Bereichsleitung Anwendungen und Datenbew
 Erste quantitative Auswertungen gemacht. Versucht zu eruieren, welche Parameter spannend sein können. 
 
 ### Restlicher November
-Weitere Auswertungen gemacht, Shapefiles gesucht für später. Hat mich aber nicht voran gebracht in meinem Ziel, die Koordinaten auf einer Karte abzubilden. Nach Evaluation meiner Auswertungen entschieden, mich einerseits auf die tödlichen Strassenunfälle generell, andererseits auf tödliche und schwere Unfälle mit Fussgängerbeteiligung zu fokussieren. Erste Plots gemacht. 
+Weitere Auswertungen gemacht. Eine der Auswertungen, die ich sonst noch gemacht habe und nicht im finalen Code sind, gibt es in dieser Datei. Nach Evaluation meiner Auswertungen entschieden, mich einerseits auf die tödlichen Strassenunfälle generell, andererseits auf tödliche und schwere Unfälle mit Fussgängerbeteiligung zu fokussieren. Ich fand einige spannende Punkte, aber die Variablen anzupassen ist am Ende das Leichteste. Wie ich die Koordinaten auf einer Karte abbilden konnte, wusste ich weiterhin nicht.  
 
 ### Dezember
 Wegen Daily Business kaum Zeit gehabt für die Arbeit. Weil die Daten schon oft benutzt wurden, war meine Idee, die Daten auf eine innovative Art zu clustern. Habe den Monat vor allem damit zugebracht, nach GIS-Gruppen zu suchen, die mir Inputs liefern können. Zudem gemerkt, dass ich meine Koordinaten von EPSG2056 (LV95 vom Bund) nach EPSG4326 (WSG84) umrechnen muss. 
